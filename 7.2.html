@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7.2</title>
     <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
         header{
             
             text-align: center;
             font-family: Georgia, 'Times New Roman', Times, serif;
             margin-bottom: 3%;
         }
-        container{
+        .container{
             
             margin-top: 10px;
+            margin: auto;
+           
         }
         .box1{
             margin-left: 10%;
@@ -22,6 +28,7 @@
             height: 500px;
             float: left;
             background: url('/img/me.jpg') no-repeat center center/cover;
+            
             
             
         }
@@ -34,7 +41,7 @@
         .box2 p{
            
             margin-top: 0%;
-            line-height: 20.6px;
+            line-height: 1.6em;
 
         }
         .box2{
@@ -101,12 +108,18 @@
             margin-left: auto;
             margin-right: auto;
             height: 25px;
+            position: sticky;
+            top:0;
+            z-index: 1;
+            
+            
            
         }
         .navi li{
            
             margin-right: 20px;
             padding: 0 5px;
+            
            
             
         }
@@ -143,7 +156,7 @@
     <h1>mika givner</h1>
     <h3>my name is mika, im 22 and working as aprogrammer</h3>
   </header>
-  <nav>
+  
     <ul class="navi">
         <li><a href="">home</a> </li>
         <li> <a href="">about</a> </li>
@@ -152,7 +165,7 @@
         <button class="three" type="button">click here</button>
     </ul>
     
-  </nav>  
+</div>  
   <container>
     <div class="box1">
        

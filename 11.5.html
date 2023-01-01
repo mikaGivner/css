@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+       
+    }
+    .nav{
+      display: flex;
+      flex-direction: row;
+      border: 1px solid rgba(183, 183, 183, 0.985);
+      width: 80%;
+      margin-inline:auto ;
+      margin-top: 20px;
+      height: 30px;
+      align-items: center;
+      justify-content: flex-end;
+      background: rgba(228, 227, 227, 0.985);
+      position: relative;
+    }
+    .nav .icon{
+        position: absolute;
+        top:8px;
+        left:5px;
+        font-weight: bold;
+    }
+   .nav li{
+        list-style: none;
+        display: inline;
+        padding: 5px;
+    }
+   .nav a{
+        text-decoration:  none;
+        color:#000;
+        
+    }
+   .nav a:hover{
+        color: aliceblue;
+    }
+        .nav2{
+            display: flex;
+            flex-direction: column;
+            width:90%;
+            margin-inline:auto;
+            margin-top: 20px;
+            border: 1px solid rgba(183, 183, 183, 0.985);
+            background: rgba(228, 227, 227, 0.985);
+            font-size: 20px;
+
+        }
+        
+       .nav2  li{
+        list-style: none;
+        padding: 20px;
+       
+        text-align: center;
+        
+    }
+    .nav2  a{
+        text-decoration:  none;
+        color:#000;
+        
+    }
+    .nav2 a:hover{
+        color: aliceblue;
+    }
+    .nav2 .icon{
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+
+    }
+    @media(max-width:800px) {
+        .nav{
+            display: none;
+        }
+    }
+    @media(min-width:801px) {
+        .nav2{
+            display: none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="icon">APPLESEEDS</div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="nav2">
+        <div class="icon">APPLESEEDS</div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+</body>
+</html>
