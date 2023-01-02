@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 1.6rem;
+            padding-top: 30px;
+        }
+
+    p{
+        position: absolute;
+        top:30px;
+        left: 25vw;
+        width: 50%;
+      padding: 10px;
+      text-align: center;
+    }
+    a{
+        position: relative;
+       text-decoration: none;
+    }
+    a:after{
+        position: absolute;
+        left: -37px;
+        top:-40px;
+        width: 9rem;
+        background: yellow;
+        color:#000;
+        content: attr(data-tip);
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 10px;
+        display: none;
+    }
+    a:before{
+        display: none;
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        border-top: 0.5em solid yellow;
+        border-left: 0.5em solid transparent;
+        border-right: 0.5em solid transparent;
+        margin: auto;
+        left: -0.3em;
+        right: 0;
+        bottom: 0.6em;
+
+
+    }
+    a:hover:after,   a:hover:before{
+        display: block;
+    }
+    
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa <a href="#" data-tip="this is a badass tooltip">asperiores</a>  vero eveniet aliquid quae itaque enim beatae tenetur ullam ex, architecto cum deserunt, nesciunt eaque, eos ut provident! Ipsum harum, officia dolores culpa minus rem esse repudiandae illum quidem omnis sequi totam tempore molestiae, maiores aliquam inventore nostrum sint saepe sed! Culpa ratione ea aperiam voluptatem eos omnis dolor laboriosam consequatur. Illo iure vero, sunt quisquam assumenda, doloremque vitae doloribus commodi similique autem, repellat quo! Hic recusandae, dolorum placeat sapiente minus reiciendis explicabo ut unde optio laboriosam doloremque nisi modi maiores voluptatum odio mollitia dicta quibusdam distinctio provident ex cumque quo iusto impedit dolore! Necessitatibus, est illo laudantium earum officia itaque natus vel magni perferendis tempore odit iusto, unde iure quibusdam dolorum explicabo harum saepe. Delectus incidunt illo cum molestiae voluptatibus aut nam, aliquam nemo odio consequatur quia rem numquam molestias in recusandae magni natus voluptatum, accusantium ex. Rem cupiditate illo ex distinctio facere alias, qui suscipit blanditiis animi ipsa vero fugit corporis mollitia placeat nisi pariatur dolore quo eligendi nostrum earum, laudantium nobis esse sunt adipisci. Quae voluptas ipsum culpa voluptate atque est nobis, minus iusto autem. Facilis, ipsam a! Ipsa dolorum, illo alias assumenda qui exercitationem atque officiis ipsam eligendi consectetur iste soluta, nam, obcaecati voluptas velit officia at quisquam deserunt unde? Reiciendis quas temporibus recusandae architecto, perspiciatis, beatae, minus eum explicabo ipsum aliquam ea magnam molestiae nisi quis odio aperiam quaerat soluta deleniti quae sapiente possimus? Velit facere, blanditiis hic assumenda explicabo, temporibus inventore, animi enim quidem minus aperiam! Maiores, illum, illo, molestiae autem dolorem at corporis recusandae rerum ducimus iusto architecto quia non tempore vero. Molestias quidem dolorum quibusdam obcaecati sunt id consequuntur minima distinctio, dolor tempora doloribus quod assumenda iusto odio quo earum officiis quam quasi vel? Non quam cumque magni natus minus optio dolore?</p>
+    </body>
+</html>
