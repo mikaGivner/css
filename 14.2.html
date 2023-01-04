@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding:0 ;
+        }
+        body{
+            font-family: ariel;
+            font-size: 1.6rem;
+            background: #343434;
+            
+        }
+        div{
+            display: inline-flex;
+            width: 100vw;
+            height:100vh;
+             flex-direction: row;
+             align-items: center; 
+            justify-content: center; 
+            flex-wrap: wrap;
+            border: 2px solid  red;
+            padding: 20%;
+            
+        }
+        .btn{
+            width:9rem;
+            height: 3rem;
+            position: relative;
+            text-decoration: none ;
+            color: black;
+            border: 2px solid  black;
+            margin:10px 30px;
+            overflow: hidden;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+        }
+        .one:before{
+            padding-top: 5px;
+            content: 'cool!';
+            background: red;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:-55px;
+            left:0px;
+            z-index: 10;
+            transition-property:top;
+            transition-duration: 1s;
+            text-align: center;
+        }
+        .one:hover:before{
+          
+          top:0;
+       }
+       .two:before{
+        padding-top: 5px;
+            content: 'TranslateX';
+            background: blue;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:-150px;
+            z-index: 10;
+            transition-property:left;
+            transition-duration: 1s;
+            text-align: center;
+        }
+        .two:hover:before{
+          
+          left:0;
+       }
+ 
+       
+       .three:before{
+            padding-top: 5px;
+            content: '';
+            background: yellow;
+            width: 43%;
+            height: 303%;
+            position: absolute;
+            top:0px;
+            left:-63px;
+           transform-origin: top-right;
+           transition-property:transform, top, left ;
+            transition-duration: 1s;
+          
+            text-align: center;
+            z-index: 10;
+        }
+#three.three:hover:before{
+    transform:rotate(-90deg);
+    top: -50px;
+    left: 40px;
+    z-index: 10;
+}
+span {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+        background: transparent;
+        z-index: 100;
+       
+} 
+     
+.four:before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+            padding-top: 5px;
+            content: 'cool!';
+            background: black;
+            color: aliceblue;
+            width:18rem;
+            height: 5rem;
+            position: absolute;
+            top:-50%;
+            left:-50%;
+            z-index: 10;
+            scale: 1;
+            animation-name:scale;
+            animation-duration: 1s;
+            text-align: center;
+            opacity: 0;
+            font-size: 5rem;
+            transition:all 2s  ;
+            
+        }
+        .four:hover::before{
+            font-size: 1rem;
+            opacity: 1;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <a class="btn one" href="#">one</a>
+        <a class="btn two" href="#">one</a>
+        <a id="three" class="btn three" href="#"><span>three</span></a>
+        <a class="btn four" href="#">one</a>
+        <a class="btn five" href="#">one</a>
+    </div>
+</body>
+</html>

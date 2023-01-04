@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgba(0, 0, 0, 0.439);
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            position: relative;
+            background: white;
+            width: 200px;
+            height: 200px;
+           
+            overflow: hidden;
+            
+        }
+        .box:before{
+            content: '';
+            background: blue;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            position: absolute;
+            top:0;
+            left:200px;
+            transition-property: left;
+            transition-duration: 2s;
+            /* animation:toLeft;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s; */
+            
+        }
+        /* @keyframes toLeft{
+            to{
+                left:0;
+            }
+        } */
+        .box:hover:before{
+          
+           left:0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

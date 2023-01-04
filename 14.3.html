@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            width: 40rem;
+            height: 3rem;
+          text-align: center;
+            
+        }
+        a{
+            flex: 1;
+            position: relative;
+            text-decoration: none;
+            /* width: 10rem; */
+            height: 2.5rem;
+            padding:0.5rem 1rem;
+            overflow: hidden;
+            margin-left: 2rem;
+          
+        }
+        a#firstIteam{
+            margin-left: 0;
+        }
+        a::before{
+            content: '';
+            position: absolute;
+            top:0;
+            left:100%;
+            width: 6rem;
+            height: 2rem;
+           border-top: 3px solid #000;
+           transition: all 1s ease-out;
+           
+        }
+        a:hover::before{
+            left:0;
+        }
+        a::after{
+            content: '';
+            position: absolute;
+            top:0;
+            left:-135%;
+            width: 6rem;
+            height: 2rem;
+           border-bottom: 3px solid #000;
+            transition: all 1s ease-out;
+           
+        }
+        a:hover::after{
+            left:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a id="firstIteam" href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Portfolio</a>
+        <a href="">Contact</a>
+        
+    </div>
+</body>
+</html>

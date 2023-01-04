@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .container{
+            width: 1200px;
+            height: 700px;
+            display: grid;
+            grid-template-areas: 
+            'item1 item1 item2 item2 item2 item3 item4 item4'
+            'item1 item1 item2 item2 item2 item3 item4 item4'
+            'item5 item5 item2 item2 item2 item6 item6 item7'
+            'item5 item5 item8 item8 item9 item6 item6 item7'
+            'item5 item5 item8 item8 item10 item10 item10 item7'
+            'item11 item12 item12 item13 item10 item10 item10 item14'
+            'item11 item12 item12 item13 item10 item10 item10 item14'
+
+            ;
+            gap:1rem;
+            padding: 3rem;
+            
+        }
+       
+        .item1{
+              grid-area: item1;
+              background: url(./gg_starter_file-main/img/1.jpeg) no-repeat center center/cover; 
+            }
+            .item2{
+                grid-area: item2; 
+                background: url(./gg_starter_file-main/img/2.jpeg) no-repeat center center/cover; 
+                
+            }
+            .item3{
+                grid-area: item3; 
+                background: url(./gg_starter_file-main/img/3.jpeg) no-repeat center center/cover; 
+                
+            }
+            .item4{
+                grid-area: item4; 
+                background: url(./gg_starter_file-main/img/4.jpeg) no-repeat center center/cover; 
+                
+            }
+            .item5{
+                grid-area: item5; 
+                background: url(./gg_starter_file-main/img/5.jpeg) no-repeat center center/cover; 
+                
+            }
+            .item6{
+                grid-area: item6;
+                background: url(./gg_starter_file-main/img/8.jpeg) no-repeat center center/cover; 
+                 
+                
+            }
+            .item7{
+                grid-area: item7; 
+                background: url(./gg_starter_file-main/img/9.jpeg) no-repeat center center/cover; 
+            }
+            .item8{
+                grid-area: item8; 
+                background: url(./gg_starter_file-main/img/6.jpeg) no-repeat center center/cover; 
+                
+            }
+            .item9{
+                grid-area: item9; 
+                background: url(./gg_starter_file-main/img/7.jpeg) no-repeat center center/cover; 
+               
+                
+            }
+            .item10{
+                grid-area: item10; 
+                background: url(./gg_starter_file-main/img/13.jpeg) no-repeat center center/cover; 
+                
+            }
+            .item11{
+                grid-area: item11; 
+                background: url(./gg_starter_file-main/img/10.jpeg) no-repeat center center/cover; 
+                
+            }
+            .item12{
+                grid-area: item12; 
+                background: url(./gg_starter_file-main/img/11.jpeg) no-repeat center center/cover; 
+                
+            }
+            .item13{
+                grid-area: item13; 
+                
+                background: url(./gg_starter_file-main/img/12.jpeg) no-repeat center center/cover; 
+                
+            }
+            .item14{
+                grid-area: item14; 
+                background: url(./gg_starter_file-main/img/14.jpeg) no-repeat center center/cover; 
+               
+            }
+            @media (max-width:780px) {
+                
+                .container{
+
+                    grid-template-areas: 
+                    'item1 item1 item1 item2 item2 item3 item3 item3'
+                    'item4 item4 item5 item2 item2 item3 item3 item3'
+                    'item4 item4 item5 item8 item8 item3 item3 item3'
+                    'item6 item6 item5 item8 item8 item9 item9 item9'
+                    'item6 item6 item7 item7 item7 item9 item9 item9'
+                    'item6 item6 item7 item7 item7 item11 item12 item12'
+                    'item13 item13 item7 item7 item7 item11 item12 item12'
+                    'item13 item13 item10 item10 item10 item11 item14 item14'
+                    ;
+                }
+            }
+            @media (max-width:550px) {
+                
+                .container{
+
+                    grid-template-areas: 
+                 'item1 item1 item2  item2 item3 item3 item4 item4'
+                 'item1 item1 item2  item2 item3 item3 item4 item4'
+                 'item1 item1 item2  item2 item3 item3 item4 item4'
+                 'item1 item1 item2  item2 item3 item3 item9 item9'
+                 'item1 item1 item2  item2 item8 item8 item9 item9'
+                 'item5 item5 item2 item2 item8 item8 item9 item9'
+                 'item5 item5 item2 item2 item8 item8 item9 item9'
+                 'item5 item5 item6 item6 item6 item6 item9 item9'
+                 'item5 item5 item6 item6 item6 item6 item9 item9'
+                
+                 'item7 item7 item6 item6 item6 item6 item9 item9'
+                 'item7 item7 item6 item6 item6 item6 item9 item9'
+                 'item7 item7 item6 item6 item6 item6 item12 item12'
+                 'item7 item7 item11 item11 item11 item13 item12 item12'
+                 'item7 item7 item11 item11 item11 item13 item12 item12'
+                
+                 'item10 item10 item11 item11 item11 item13 item14 item14'
+                 'item10 item10 item11 item11 item11 item13 item14 item14'
+                 'item10 item10 item11 item11 item11 item13 item14 item14'
+                    ;
+                }
+            }
+            </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="container">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3 item3"></div>
+            <div class="item item4 item4"></div>
+            <div class="item item5"></div>
+            <div class="item item6"></div>
+            <div class="item item7"></div>
+            <div class="item item8"></div>
+            <div class="item item9"></div>
+            <div class="item item10"></div>
+            <div class="item item11"></div>
+            <div class="item item12"></div>
+            <div class="item item13"></div>
+            <div class="item item14"></div>
+        </div>
+    </div>
+    </body>
+</html>
